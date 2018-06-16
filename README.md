@@ -1,5 +1,2 @@
-# [Invie](https://mikeegivieer.github.io/Invie/)
-Un website para vender guitarras
-
-
- 
+# [Invie](https://mikeegivieer.github.io/InvieResposiveDesign/)
+Un website responsive para vender guitarras.
