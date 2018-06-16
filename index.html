@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/invie.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
   <title>Invie - Tus mejores guitarras!</title>
 </head>
 
@@ -18,8 +20,9 @@
       <figure class="logotipo">
         <img src="images/invie.png" alt="Invie logo">
       </figure>
+      <span class="burger-button icon-menu" id="burger-button"></span>
       <!-- Menu -->
-      <nav class="menu">
+      <nav class="menu" id="menu">
         <ul>
           <li>
             <a href="index.html"> Home</a>
@@ -132,7 +135,17 @@
 
     </div>
   </footer>
+<script>
 
+  var $burgerButton = document.getElementById('burger-button');
+  var $menu = document.getElementById('menu');
+   $burgerButton.addEventListener('touchstart',toggleMenu);
+
+   function toggleMenu() {
+     $menu.classList.toggle('active');
+   };
+
+</script>
 </body>
 
 </html>
