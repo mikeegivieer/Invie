@@ -1,4 +1,4 @@
-# [Invie](https://mikeegivieer.github.io/InvieResposiveDesign/)
+# [Invie](https://mikeegivieer.github.io/Invie/)
 
 A responsive website dedicated to the sale of guitars.
 It has support for gestures with Hammer.JS and optimization of images with Lazy loading.
