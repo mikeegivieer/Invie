@@ -6,7 +6,8 @@ It has support for gestures with Hammer.JS and optimization of images with Lazy 
 
 ![Desktop: ](Design/desktop.png)
 
-![Smartphon: ](Design/smartphon.png) 
 
 ![Tablet: ](Design/tablet.png)
 
+
+![Smartphone: ](Design/smartphone.png) 
