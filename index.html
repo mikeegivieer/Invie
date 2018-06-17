@@ -18,7 +18,7 @@
     <header id="header" class="header contenedor">
       <!-- logotipo -->
       <figure class="logotipo">
-        <img src="images/invie.png" alt="Invie logo">
+        <img class="b-lazy" src="images/invie.png" alt="Lazy Loading">
       </figure>
       <span class="burger-button icon-menu" id="burger-button"></span>
       <!-- Menu -->
@@ -52,7 +52,7 @@
     <h2>Nuestras guitarras</h2>
     <!-- planta 1 -->
     <article class="guitarra">
-      <img class="derecha" src="images/invie-acustica.png" alt="Guitarra logo" width="330" height="330">
+      <img class="derecha b-lazy" data-src="images/invie-acustica.png" alt="Lazy Loading" width="330" height="330">
       <div class="contenedor-guitarra-a">
       <h3 class="tittle-b">Invie Acústica</h3>
       <ol>
@@ -70,7 +70,7 @@
     </article>
     <!-- planta 2 -->
     <article class="guitarra b">
-      <img class="izquierda"src="images/invie-classic.png" alt="Guitarra logo" width="330" height="330">
+      <img class="izquierda b-lazy" data-src="images/invie-classic.png" alt="Lazy Loading" width="330" height="330">
       <div class="contenedor-guitarra-b">
       <h3 class="tittle-b">Invie Classic</h3>
       <ol>
@@ -91,7 +91,7 @@
     <div class="contenedor">
 
       <div class="contacto">
-        <img src="images/invie-white.png" alt="logotipo blanco">
+        <img class="b-lazy" data-src="images/invie-white.png" alt="Lazy Loading">
         <a href="tel:+52548665542"><strong>Teléfono</strong> <span>323256545</span></a>
         <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
       </div>
@@ -135,6 +135,8 @@
 
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 <script>
 
   var consulta = window.matchMedia('(max-width: 500px)');
@@ -154,7 +156,9 @@
     }
   }
   mediaQuery();
-
+var bLazy = new Blazy({
+  selector: 'img'
+});
 </script>
 </body>
 
