@@ -90,6 +90,7 @@ video{
 .background{
   background-image: url('../images/background.png');
   background-size: cover;
+  background-color: #466173;
 }
 .button{
   border-radius: 12px;
@@ -486,6 +487,12 @@ margin-bottom: 70px;
    font-size: 30px;
  }
 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .background{
+  background-image: url('../images/background2x.png');
+  }
 }
 
 /**{ selector universal
